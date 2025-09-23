@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ronal"/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-23 01:55:19 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1NVkEzNVVBSzsyMDI1LTA5LTIzOzExOjQ0OjQ1IEFNOzI4MDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1NVkEzNVVBSzsyMDI1LTA5LTIzOzAxOjU1OjE5IFBNOzI7MjkzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="nim, hargamulamula, hargaSelesaiAcer, hargaSelesaiAsus, hargaSelesaiLenovo, diskonAcer, diskonAsus, diskonLenovo" type="Integer" array="False" size=""/>
+            <output expression="&quot;SELAMAT HADIR DI MUHAMMAD AZHRIL TIRTHA&quot;" newline="True"/>
+            <output expression="&quot;Masukkan Nama anda:&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukkan NIM anda:&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;1.Acer&quot;" newline="True"/>
+            <output expression="&quot;2.Asus:&quot;" newline="True"/>
+            <output expression="&quot;3.Lenovo&quot;" newline="True"/>
+            <output expression="&quot;Dana pembelian laptop anda.&quot;" newline="True"/>
+            <input variable="HargaMulaMula"/>
+            <assign variable="diskonAcer" expression="hargaMulaMula*(5/100)"/>
+            <assign variable="diskonAsus" expression="hargaMulaMula*(7/100)"/>
+            <assign variable="diskonLenovo" expression="hargaMulaMula*(10/100)"/>
+            <assign variable="hargaSelesaiAcer" expression="hargaMulaMula-diskonAcer"/>
+            <assign variable="hargaSelesaiAsus" expression="hargaMulaMula-diskonAsus"/>
+            <assign variable="hargaSelesaiLenovo" expression="hargaMulaMula-diskonLenovo"/>
+            <output expression="nama&amp;&quot; &quot;&amp; &quot;dengan NIM &quot;&amp; nim &amp;&quot; &quot;&amp; &quot;ingin membeli laptop dengan dana &quot; &amp; hargaMulaMula" newline="True"/>
+            <output expression="&quot;Jika&quot;&amp; nama &amp; &quot; &quot; &amp; &quot;membeli laptop Acer anda harus membayar Rp&quot; &amp; hargaSelesaiAcer &amp; &quot; &quot; &amp;&quot;setelah mendapat diskon 5%&quot;" newline="True"/>
+            <output expression="&quot;Jika&quot;&amp; nama &amp; &quot; &quot; &amp; &quot;membeli laptop Asus anda harus membayar Rp&quot; &amp; hargaSelesaiAsus &amp; &quot; &quot; &amp;&quot;setelah mendapat diskon 10%&quot;" newline="True"/>
+            <output expression="&quot;Jika&quot;&amp; nama &amp; &quot; &quot; &amp; &quot;membeli laptop Lenovo anda harus membayar Rp&quot; &amp; hargaSelesaiLenovo &amp; &quot; &quot; &amp;&quot;setelah mendapat diskon 10%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
